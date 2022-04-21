@@ -1,0 +1,17 @@
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+span {
+    color: green;
+}
+
+#unico {
+    color:blue;
+}
+
+.rojo {
+    color:red;
+}
+.clase {
+    color:hotpink;
+}
