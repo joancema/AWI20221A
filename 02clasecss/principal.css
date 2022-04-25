@@ -1,0 +1,42 @@
+
+.cabecera {
+    grid-area: cabecera;
+}
+.izquierdo {
+    grid-area: izquierdo;
+}
+.contenido {
+    grid-area: contenido;
+}
+.pie {
+    grid-area: pie;
+}
+
+
+.item {
+    border: 1px solid blue;
+}
+.contenedor > div {
+    background-color:burlywood;
+    text-align: center;
+    font-size:15px;
+}
+
+.contenedor {
+    display: grid;
+    /*
+    Cuantas filas y cuantas columnas (2 columnas x 3 filas)
+     */
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr 200px 1fr;
+
+    grid-template-areas: "cabecera cabecera"
+                         "izquierdo contenido"
+                         "izquierdo pie";
+    background-color: aqua;
+    gap: 10px;
+    padding: 10px;
+    height:100vh ;
+    
+    
+}
