@@ -8,17 +8,11 @@ const iva=12;
 // iva=14;
 var variableGlobal=0;
 // variablex=6;
-
-
-console.log(generar)
-generar.addEventListener('click', generarTablaDeMultiplicar(6)  )
-
-
+generar.addEventListener('click', ()=>{
+  generarTablaDeMultiplicar(multiplicar.value);
+} )
 let valorAMultiplicar=Number(multiplicar.value); 
-
-
 // generarTablaDeMultiplicar(valorAMultiplicar)
-
 function generarTablaDeMultiplicar(tabla)
 {
   for (let i=1;i<13; i++ )
@@ -29,6 +23,28 @@ function generarTablaDeMultiplicar(tabla)
 
 
 }  
+
+invertir.addEventListener('click',()=>{
+  comida.value = comida.value.split(" ").reverse().join(" ")
+})
+
+cambiarValores.addEventListener('click',()=>{
+  const auxiliar = txtnumero1.value;
+  txtnumero1.value= txtnumero2.value;
+  txtnumero2.value= auxiliar;
+})
+
+sumar.addEventListener('click', ()=>{
+  let prueba= ' Papa JOhn\'s '
+  // txtresultado.value= Number(txtnumero1.value)+ Number(txtnumero2.value);
+  txtresultado.value= eval(`${txtnumero1.value} ${sumar.innerHTML} ${txtnumero2.value} + 1`)
+  (()=>{
+    alert('ok')
+  })()
+})
+
+
+
 
 
 document.querySelector('#app').innerHTML = `
