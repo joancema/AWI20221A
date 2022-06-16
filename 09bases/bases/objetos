@@ -1,0 +1,41 @@
+const persona = {
+  nombre: "Homero",
+  apellido:"Simpson",
+  edad:45,
+  direccion:{
+    ciudad:"Springfield",
+    calle:"Siempre viva",
+    lat:14.3434,
+    lng:12.2323
+  },
+  familiares:[
+    {tipo:"hijo", nombre:"Bart"},
+    {tipo:"hijo", nombre:"Lissa"},
+    {tipo:"esposa", nombre:"March"},
+  ],
+  saludar(){
+    console.log(`Hola como estas ${ this.nombre }`)
+  }
+}
+
+
+const otraPersona =  {...persona}  
+// const otraPersona = persona;
+
+otraPersona.nombre="Bart"
+
+console.log(persona.nombre);
+console.log(otraPersona.nombre);
+
+
+
+
+
+// persona.saludar()
+
+// persona.apellido="Smiders"
+
+// console.log(persona.nombre);
+// console.log(persona.apellido);
+// console.log(persona.direccion.calle, persona.direccion.ciudad);
+// console.log(persona.familiares[2].nombre);
