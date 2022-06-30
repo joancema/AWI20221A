@@ -1,7 +1,11 @@
 import { Pokemon } from './Pokemon';
-import { villanos } from './Villanos'
+import { villanos } from './Villanos';
 
-export  {
+
+// export { villanos } from './Villanos'
+
+
+export  type {
     Pokemon,
     villanos
 }

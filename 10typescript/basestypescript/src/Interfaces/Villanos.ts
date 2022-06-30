@@ -1,4 +1,4 @@
-export interface villanos {
+export  interface villanos {
     name:string;
     realName:string;
 }
